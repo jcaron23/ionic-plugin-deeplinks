@@ -187,6 +187,10 @@ var IonicDeeplink = {
       return data.host;
     }
 
+    return data.path;
+
+    /*
+
     var restOfUrl = data.url.slice(data.url.indexOf(data.host) + data.host.length);
 
     if(restOfUrl.indexOf('?') > -1) {
@@ -198,6 +202,7 @@ var IonicDeeplink = {
     }
 
     return restOfUrl;
+    */
   },
 
   onDeepLink: function(callback) {
